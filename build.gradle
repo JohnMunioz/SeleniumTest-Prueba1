@@ -1,5 +1,7 @@
+
+
 plugins {
-    // Apply the Java Gradle plugin development plugin to add support for developing Gradle plugins
+    // Apply the application plugin to add support for building a CLI application in Java.
     id 'application'
 }
 
@@ -38,4 +40,3 @@ tasks.named('test') {
    systemProperty "cucumber.options", System.getProperty("cucumber.options")
    systemProperties System.getProperties()
 }
-
